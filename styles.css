@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     height: 100vh;
@@ -36,6 +40,16 @@ button:hover, form .btn-submit input:hover{
     transform: scale(1.1);
 }
 
+h1.title{
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+}
+
+h1.title span{
+    color: #ecba0e;
+}
+
 h2.title{
     font-size: 38px;
     color: #fff;
@@ -64,7 +78,7 @@ header a{
     transition: .2s;
 }
 
-header a:hover{
+header nav.menu-desktop a:hover{
     color: #fff;
     transform: scale(1.1);
 }
@@ -73,9 +87,74 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
+}
+
+/* style of menu mobile */
+
+.btn-open-menu{
+    color:#ecb80e;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    width: 0%;
+    background-color: #000000bd;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.active{
+    width: 70%;
+}
+
+.menu-mobile.active ~ .overlay-menu{
+    display: block;
+}
+
+.overlay-menu{
+   background-color: #000000b7;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 8888;
+   display: none;
+}
+
+.menu-mobile .btn-close{
+    padding: 20px 4%;
+}
+
+.menu-mobile .btn-close i{
+    font-size: 30px;
+    color: #ecb80e;
+    transition: .2s;
+}
+
+.menu-mobile nav ul{
+   text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #ecba0e; 
 }
 
 /* style of top site */
@@ -211,6 +290,7 @@ section.portfolio{
 
 section.portfolio .flex{
     justify-content: space-around;
+    margin-top: 40px;
 }
 
 .img-port{
@@ -218,6 +298,17 @@ section.portfolio .flex{
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port-gif{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 50% 0;
     transition: 8s;
     cursor: pointer;
     border-radius: 40px;
@@ -325,3 +416,119 @@ footer .line-footer p a{
 .border{
     border-top: 2px solid #ecb80e;
 }
+
+
+
+/* style of media queries */
+
+@media (max-width: 1024px){
+
+   
+    /* style of global */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.title{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+     /* style of header */
+     .menu-desktop, .btn-contact{
+        display: none;
+    }
+
+    /* style of top site */
+    section.top-site .flex{
+        gap: 40px;
+    }
+    
+    section.top-site{
+        padding: 80px 8%;
+    }
+
+    .top-site .txt-top-site{
+        text-align: center;
+    }
+
+    .top-site .img-top-site{
+        width: 100%;
+    }
+
+    /* style of specialties */
+    .section.specialties{
+        padding: 40px 8%;
+    }
+
+    /* style of about */
+
+    section.about{
+        padding: 80px 8%;
+    }
+
+    section.about .flex{
+        flex-direction: column-reverse;
+    }
+
+    .about .about-txt h2{
+       font-size: 34px;
+       line-height: 35px;
+       text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    /* style of portfolio */
+
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    .portfolio .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* style of footer */
+    footer .flex{
+        flex-direction: column;
+        gap: 30px; 
+    }
+    
+    footer .line-footer{
+        text-align: center;
+    }
+
+    .btn-open-menu{
+        display: block;
+    }
+
+}
+
+/* style of message send */
+
+.message{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.messagesucesseful{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+} 
