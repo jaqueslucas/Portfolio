@@ -22,6 +22,7 @@ const translations = {
         'about-heading': 'HELLO THERE,<span>I AM LUCAS JAQUES.</span>',
         'about-p1': "Hi, I'm Lucas Jaques, a full-stack developer and SAP BTP specialist based in Brazil. With hands-on experience in the SAP Cloud Application Programming (CAP) model and real-world integrations with SAP S/4HANA, I bridge the gap between enterprise systems and modern cloud solutions.",
         'about-p2': "When I'm not coding, you can find me playing video games, watching movies, or anime.",
+        'about-completion': 'Completing the DSM course in July 2026.',
         'sap-heading': 'SAP <span>EXPERTISE.</span>',
         'sap-desc': 'Active SAP ecosystem professional with hands-on experience building cloud-native solutions on SAP BTP. Currently delivering real integration solutions for clients using SAP S/4HANA Public Edition.',
         'sap-btp-desc': 'Business Technology Platform — cloud-native apps and integrations',
@@ -86,6 +87,25 @@ const translations = {
         'contact-heading': 'TALK <span>TO ME.</span>',
         'contact-desc': 'You can reach me through my professional networks:',
         'footer-tagline': 'Built with pure HTML, CSS & JavaScript — no frameworks.',
+        'cat-prof': 'Professional Projects',
+        'cat-acad': 'Academic Projects',
+        'cat-pers': 'Personal Projects',
+        'featured-period': 'In production since 2024',
+        'featured-contrib': 'Complete development of the platform — front-end, back-end and SAP integrations — in collaboration with one partner.',
+        'view-demo': 'Live Demo',
+        'about-goals': 'Professional goal: to grow as a SAP BTP / full-stack engineer, building high-impact enterprise integrations and cloud solutions.',
+        'langs-pt': 'Portuguese — Native',
+        'langs-en': 'English — Advanced',
+        'todolist-desc': 'Task management app with JWT authentication, role-based access control (RBAC), SQLite persistence and an interactive drag-and-drop Kanban board.',
+        'todolist-contrib': 'Solo project — full development of the front-end, REST API and database.',
+        'tincat-desc': '"Tinder for cats" concept website — a fun take on the Tinder experience built to practice responsive layouts.',
+        'tincat-contrib': 'Solo project — design and full implementation.',
+        'simon-desc': 'Browser version of the classic Simon memory game — color sequences, sounds and progressive difficulty.',
+        'simon-contrib': 'Solo project — game logic and interface in pure JavaScript.',
+        'drum-desc': 'Interactive virtual drum kit — play with mouse clicks or keyboard keys, with real drum samples.',
+        'drum-contrib': 'Solo project — DOM event handling and audio playback in JavaScript.',
+        'dice-desc': 'Two-player dice game — random rolls decide the winner on each page refresh.',
+        'dice-contrib': 'Solo project — randomization logic and DOM manipulation.',
     },
     pt: {
         'nav-home': 'Início',
@@ -109,6 +129,7 @@ const translations = {
         'about-heading': 'OLÁ,<span>EU SOU LUCAS JAQUES.</span>',
         'about-p1': 'Olá, sou Lucas Jaques, desenvolvedor full-stack e especialista em SAP BTP baseado no Brasil. Com experiência prática no modelo CAP (Cloud Application Programming) da SAP e integrações reais com SAP S/4HANA, faço a ponte entre sistemas enterprise e soluções modernas em nuvem.',
         'about-p2': 'Quando não estou codando, você pode me encontrar jogando video games, assistindo filmes ou animes.',
+        'about-completion': 'Conclusão do curso DSM em julho de 2026.',
         'sap-heading': 'EXPERIÊNCIA <span>SAP.</span>',
         'sap-desc': 'Profissional ativo no ecossistema SAP com experiência prática na construção de soluções cloud-native na SAP BTP. Atualmente entregando soluções de integração reais para clientes utilizando SAP S/4HANA Public Edition.',
         'sap-btp-desc': 'SAP Business Technology Platform — apps e integrações cloud-native',
@@ -173,6 +194,25 @@ const translations = {
         'contact-heading': 'FALE <span>COMIGO.</span>',
         'contact-desc': 'Você pode falar comigo pelas minhas redes profissionais:',
         'footer-tagline': 'Feito com HTML, CSS e JavaScript puros — sem frameworks.',
+        'cat-prof': 'Projetos Profissionais',
+        'cat-acad': 'Projetos Acadêmicos',
+        'cat-pers': 'Projetos Pessoais',
+        'featured-period': 'Em produção desde 2024',
+        'featured-contrib': 'Desenvolvimento completo da plataforma — front-end, back-end e integrações SAP — em colaboração com um parceiro.',
+        'view-demo': 'Ver Demo',
+        'about-goals': 'Objetivo profissional: crescer como engenheiro SAP BTP / full-stack, construindo integrações enterprise e soluções em nuvem de alto impacto.',
+        'langs-pt': 'Português — Nativo',
+        'langs-en': 'Inglês — Avançado',
+        'todolist-desc': 'App de gestão de tarefas com autenticação JWT, controle de acesso por papéis (RBAC), persistência em SQLite e quadro Kanban interativo com drag-and-drop.',
+        'todolist-contrib': 'Projeto solo — desenvolvimento completo do front-end, API REST e banco de dados.',
+        'tincat-desc': 'Site conceito "Tinder para gatos" — releitura divertida da experiência do Tinder, criada para praticar layouts responsivos.',
+        'tincat-contrib': 'Projeto solo — design e implementação completa.',
+        'simon-desc': 'Versão browser do clássico jogo da memória Simon — sequências de cores, sons e dificuldade progressiva.',
+        'simon-contrib': 'Projeto solo — lógica do jogo e interface em JavaScript puro.',
+        'drum-desc': 'Bateria virtual interativa — toque com cliques do mouse ou teclas do teclado, com samples reais de bateria.',
+        'drum-contrib': 'Projeto solo — manipulação de eventos DOM e reprodução de áudio em JavaScript.',
+        'dice-desc': 'Jogo de dados para dois jogadores — rolagens aleatórias decidem o vencedor a cada atualização da página.',
+        'dice-contrib': 'Projeto solo — lógica de aleatoriedade e manipulação do DOM.',
     }
 };
 
@@ -199,7 +239,7 @@ btnTheme.addEventListener('click', () => {
 // ===== LANGUAGE TOGGLE =====
 const btnLang = document.getElementById('btn-lang');
 const langLabel = btnLang.querySelector('span');
-let currentLang = localStorage.getItem('lang') || 'en';
+let currentLang = localStorage.getItem('lang') || 'pt';
 
 function applyTranslations(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {

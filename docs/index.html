@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Lucas Jaques</title>
+    <meta name="description" content="Portfólio de Lucas Jaques — desenvolvedor full-stack e especialista SAP BTP. Projetos acadêmicos (FATEC DSM), profissionais e pessoais.">
+    <title>Portfólio — Lucas Jaques</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -93,7 +94,7 @@
                         </div>
                     </div>
                     <div class="img-top-site">
-                        <img src="img/me.png" alt="My Photo">
+                        <img src="img/me.png" alt="Foto de Lucas Jaques">
                     </div>
                 </div>
             </div>
@@ -148,13 +149,19 @@
             <div class="interface">
                 <div class="flex">
                     <div class="about-img fade-in">
-                        <img src="img/me2.jpeg" alt="My Photo">
+                        <img src="img/me2.jpeg" alt="Foto de Lucas Jaques">
                     </div>
                     <div class="about-txt fade-in">
                         <span class="kicker kicker-left" aria-hidden="true">02</span>
                         <h2 class="title" data-i18n-html="about-heading">HELLO THERE,<span>I AM LUCAS JAQUES.</span></h2>
                         <p data-i18n="about-p1">Hi, I'm Lucas Jaques, a full-stack developer and SAP BTP specialist based in Brazil. With hands-on experience in the SAP Cloud Application Programming (CAP) model and real-world integrations with SAP S/4HANA, I bridge the gap between enterprise systems and modern cloud solutions.</p>
+                        <p data-i18n="about-goals">Professional goal: to grow as a SAP BTP / full-stack engineer, building high-impact enterprise integrations and cloud solutions.</p>
                         <p data-i18n="about-p2">When I'm not coding, you can find me playing video games, watching movies, or anime.</p>
+                        <p data-i18n="about-completion">Completing the DSM course in July 2026.</p>
+                        <div class="about-langs">
+                            <span><i class="bi bi-translate"></i> <span data-i18n="langs-pt">Portuguese — Native</span></span>
+                            <span><i class="bi bi-translate"></i> <span data-i18n="langs-en">English — Advanced</span></span>
+                        </div>
                         <div class="btn-social">
                             <a href="https://www.linkedin.com/in/jaqueslucas/?locale=en_US" target="_blank" rel="noopener noreferrer">
                                 <button><i class="bi bi-linkedin"></i></button>
@@ -354,6 +361,9 @@
                 <span class="kicker" aria-hidden="true">05</span>
                 <h2 class="title" data-i18n-html="portfolio-heading">MY <span>PORTFOLIO.</span></h2>
 
+                <!-- PROFESSIONAL PROJECTS -->
+                <div class="other-projects-label category-label fade-in" data-i18n="cat-prof">Professional Projects</div>
+
                 <!-- LUMA FEATURED -->
                 <div class="portfolio-featured fade-in">
                     <div class="featured-card">
@@ -363,8 +373,10 @@
                         </div>
                         <div class="featured-info">
                             <div class="featured-badge" data-i18n="featured-badge">Featured Project</div>
+                            <span class="featured-period" data-i18n="featured-period">In production since 2024</span>
                             <h3>Luma</h3>
                             <p data-i18n="featured-desc">An ambitious SAP integration platform currently serving real clients. Delivers nota fiscal (NF-e) monitoring integrated directly into SAP S/4HANA Public Edition — with a pipeline of new integration capabilities in development.</p>
+                            <p class="featured-contrib"><strong data-i18n="contrib-label">My contribution:</strong> <span data-i18n="featured-contrib">Complete development of the platform — front-end, back-end and SAP integrations — in collaboration with one partner.</span></p>
                             <div class="tech-tags">
                                 <span>SAP CAP</span>
                                 <span>Node.js</span>
@@ -383,6 +395,9 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ACADEMIC PROJECTS -->
+                <div class="other-projects-label category-label fade-in" data-i18n="cat-acad">Academic Projects</div>
 
                 <!-- FATEC ABPs — CANDAGO -->
                 <div class="fatec-section">
@@ -404,6 +419,9 @@
                                 <h4>Candago Scrum</h4>
                                 <p data-i18n="candago-scrum-desc">Scrum management platform — sprint planning, backlog and team collaboration.</p>
                                 <p class="fatec-contrib"><strong data-i18n="contrib-label">My contribution:</strong> <span data-i18n="candago-scrum-contrib">Front-end development with HTML, CSS and JavaScript and participation in the team's Scrum ceremonies.</span></p>
+                                <div class="fatec-tech-tags">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                </div>
                                 <a href="https://github.com/L-Gustavo-Barbosa/candagoScrum" target="_blank" rel="noopener noreferrer" class="fatec-link">
                                     <i class="bi bi-github"></i>
                                     <span data-i18n="view-github">View on GitHub</span>
@@ -504,19 +522,126 @@
                     </div>
                 </div>
 
-                <!-- OTHER PROJECTS -->
-                <div class="other-projects-label fade-in" data-i18n="other-projects-label">Other Projects</div>
-                <div class="flex portfolio-grid">
-                    <div class="img-port fade-in" style="background-image: url(img/site1.png);">
-                        <a href="https://jaqueslucas.github.io/TinCat-Project/" target="_blank" rel="noopener noreferrer">
-                            <div class="overlay">TinCat Website</div>
-                        </a>
+                <!-- PERSONAL PROJECTS -->
+                <div class="other-projects-label category-label fade-in" data-i18n="cat-pers">Personal Projects</div>
+                <div class="fatec-grid personal-grid">
+
+                    <!-- ToDoList -->
+                    <div class="fatec-card fade-in">
+                        <div class="fatec-card-bg" style="background-image: url(img/todolist.png);"></div>
+                        <div class="fatec-card-content">
+                            <div class="fatec-sem-tag">2025</div>
+                            <h4>ToDoList Kanban</h4>
+                            <p data-i18n="todolist-desc">Task management app with JWT authentication, role-based access control (RBAC), SQLite persistence and an interactive drag-and-drop Kanban board.</p>
+                            <p class="fatec-contrib"><strong data-i18n="contrib-label">My contribution:</strong> <span data-i18n="todolist-contrib">Solo project — full development of the front-end, REST API and database.</span></p>
+                            <div class="fatec-tech-tags">
+                                <span>React</span><span>Node.js</span><span>SQLite</span><span>JWT</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/jaqueslucas/ToDoList" target="_blank" rel="noopener noreferrer" class="fatec-link">
+                                    <i class="bi bi-github"></i>
+                                    <span data-i18n="view-github">View on GitHub</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="img-port-gif fade-in" style="background-image: url(img/simon.gif);">
-                        <a href="https://jaqueslucas.github.io/Simon-the-game/" target="_blank" rel="noopener noreferrer">
-                            <div class="overlay">Simon The Game</div>
-                        </a>
+
+                    <!-- TinCat -->
+                    <div class="fatec-card fade-in">
+                        <div class="fatec-card-bg" style="background-image: url(img/site1.png);"></div>
+                        <div class="fatec-card-content">
+                            <div class="fatec-sem-tag">2022</div>
+                            <h4>TinCat</h4>
+                            <p data-i18n="tincat-desc">"Tinder for cats" concept website — a fun take on the Tinder experience built to practice responsive layouts.</p>
+                            <p class="fatec-contrib"><strong data-i18n="contrib-label">My contribution:</strong> <span data-i18n="tincat-contrib">Solo project — design and full implementation.</span></p>
+                            <div class="fatec-tech-tags">
+                                <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/jaqueslucas/TinCat-Project" target="_blank" rel="noopener noreferrer" class="fatec-link">
+                                    <i class="bi bi-github"></i>
+                                    <span data-i18n="view-github">View on GitHub</span>
+                                </a>
+                                <a href="https://jaqueslucas.github.io/TinCat-Project/" target="_blank" rel="noopener noreferrer" class="fatec-link ghost">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span data-i18n="view-demo">Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Simon -->
+                    <div class="fatec-card fade-in">
+                        <div class="fatec-card-bg" style="background-image: url(img/simon.gif);"></div>
+                        <div class="fatec-card-content">
+                            <div class="fatec-sem-tag">2023</div>
+                            <h4>Simon The Game</h4>
+                            <p data-i18n="simon-desc">Browser version of the classic Simon memory game — color sequences, sounds and progressive difficulty.</p>
+                            <p class="fatec-contrib"><strong data-i18n="contrib-label">My contribution:</strong> <span data-i18n="simon-contrib">Solo project — game logic and interface in pure JavaScript.</span></p>
+                            <div class="fatec-tech-tags">
+                                <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/jaqueslucas/Simon-the-game" target="_blank" rel="noopener noreferrer" class="fatec-link">
+                                    <i class="bi bi-github"></i>
+                                    <span data-i18n="view-github">View on GitHub</span>
+                                </a>
+                                <a href="https://jaqueslucas.github.io/Simon-the-game/" target="_blank" rel="noopener noreferrer" class="fatec-link ghost">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span data-i18n="view-demo">Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drum Kit -->
+                    <div class="fatec-card fade-in">
+                        <div class="fatec-card-bg" style="background-image: url(img/drumkit.png);"></div>
+                        <div class="fatec-card-content">
+                            <div class="fatec-sem-tag">2023</div>
+                            <h4>Drum Kit</h4>
+                            <p data-i18n="drum-desc">Interactive virtual drum kit — play with mouse clicks or keyboard keys, with real drum samples.</p>
+                            <p class="fatec-contrib"><strong data-i18n="contrib-label">My contribution:</strong> <span data-i18n="drum-contrib">Solo project — DOM event handling and audio playback in JavaScript.</span></p>
+                            <div class="fatec-tech-tags">
+                                <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/jaqueslucas/Drum-Kit" target="_blank" rel="noopener noreferrer" class="fatec-link">
+                                    <i class="bi bi-github"></i>
+                                    <span data-i18n="view-github">View on GitHub</span>
+                                </a>
+                                <a href="https://jaqueslucas.github.io/Drum-Kit/" target="_blank" rel="noopener noreferrer" class="fatec-link ghost">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span data-i18n="view-demo">Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dice Game -->
+                    <div class="fatec-card fade-in">
+                        <div class="fatec-card-bg" style="background-image: url(img/dicegame.png);"></div>
+                        <div class="fatec-card-content">
+                            <div class="fatec-sem-tag">2023</div>
+                            <h4>Dice Game</h4>
+                            <p data-i18n="dice-desc">Two-player dice game — random rolls decide the winner on each page refresh.</p>
+                            <p class="fatec-contrib"><strong data-i18n="contrib-label">My contribution:</strong> <span data-i18n="dice-contrib">Solo project — randomization logic and DOM manipulation.</span></p>
+                            <div class="fatec-tech-tags">
+                                <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/jaqueslucas/Dice-Game-Challenge" target="_blank" rel="noopener noreferrer" class="fatec-link">
+                                    <i class="bi bi-github"></i>
+                                    <span data-i18n="view-github">View on GitHub</span>
+                                </a>
+                                <a href="https://jaqueslucas.github.io/Dice-Game-Challenge/dicee.html" target="_blank" rel="noopener noreferrer" class="fatec-link ghost">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span data-i18n="view-demo">Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

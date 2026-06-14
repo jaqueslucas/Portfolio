@@ -13,7 +13,7 @@
 | Avaliação | Vídeo |
 |-----------|-------|
 | 2DSM | _(adicionar link)_ |
-| 4DSM | _(adicionar link)_ |
+| 4DSM | [https://youtu.be/XoENddloMmU](https://youtu.be/XoENddloMmU) |
 | 6DSM | _(adicionar link)_ |
 
 ## Sobre
@@ -23,13 +23,16 @@ Portfólio pessoal desenvolvido com HTML5, CSS3 e JavaScript puro, funcionando e
 ## Funcionalidades
 
 - Toggle de tema claro / escuro (persistido em `localStorage`)
-- Toggle de idioma Português / Inglês
+- Toggle de idioma Português / Inglês (padrão: Português)
 - Seção de especialidades (Front-end, Back-end, Prompt Engineering, SAP/BTP)
+- Apresentação com objetivos profissionais e idiomas
 - Timeline da jornada acadêmica e profissional
 - Contador de stats animado
 - Destaque de cliente ativo (Vida Veg — projeto Luma)
 - Seção SAP Expertise com certificação CAP verificável
-- 6 projetos ABP da organização Candago (FATEC), com contribuição pessoal em cada um
+- Projetos categorizados em **Profissionais**, **Acadêmicos** e **Pessoais**
+- 6 projetos ABP da organização Candago (FATEC), com contribuição pessoal, tecnologias, semestre e link de repositório em cada um
+- 5 projetos pessoais com descrição, contribuição, tecnologias, repositório e demo ao vivo
 - Seção de contato com redes profissionais (GitHub e LinkedIn)
 
 ## Stack

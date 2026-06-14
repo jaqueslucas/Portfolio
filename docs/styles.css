@@ -2227,3 +2227,79 @@ body {
         font-size: 30px;
     }
 }
+
+/* ===== PROJECT CATEGORIES & PERSONAL CARDS ===== */
+.category-label {
+    margin: 56px 0 34px;
+}
+
+.personal-grid {
+    margin-top: 0;
+}
+
+.featured-period {
+    display: inline-block;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 13px;
+    border-radius: 20px;
+    margin: 0 0 12px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.featured-contrib {
+    color: var(--text);
+    opacity: 0.85;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.featured-contrib strong {
+    color: var(--accent);
+}
+
+.card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.fatec-link.ghost {
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    backdrop-filter: blur(4px);
+}
+
+.fatec-link.ghost:hover {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: none;
+}
+
+.about-langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.about-langs > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 18px;
+}
+
+.about-langs i {
+    color: var(--accent);
+}
