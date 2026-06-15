@@ -14,7 +14,7 @@
 |-----------|-------|
 | 2DSM | _(adicionar link)_ |
 | 4DSM | [https://youtu.be/XoENddloMmU](https://youtu.be/XoENddloMmU) |
-| 6DSM | _(adicionar link)_ |
+| 6DSM | [https://youtu.be/-08MQvUlHiU](https://youtu.be/-08MQvUlHiU) |
 
 ## Sobre
 
